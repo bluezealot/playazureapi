@@ -17,7 +17,6 @@ public class EntryService implements CommandLineRunner, ExitCodeGenerator{
     @Override
     public int getExitCode() {
         log.info("Console End---");
-        log.info("Config: " + config.getAuthUri());
         return 0;
     }
 
