@@ -1,9 +1,0 @@
-custom:
-  authUri: https://login.microsoftonline.com/
-  logAnalyticsApi: https://api.loganalytics.io
-  grantType: client_credentials
-  logAnalyticsWorkspaceId: #{your work space id}  
-  tenantId: #{your tenant id}
-  clientId: #{your client id}
-  secretKey: #{your secret key}
-
