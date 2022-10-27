@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 public class EntryService implements CommandLineRunner, ExitCodeGenerator{
 
     @Autowired
-    AppConfig config;
+    LogAnalytics logAnalytics;
 
     @Override
     public int getExitCode() {
@@ -23,7 +23,8 @@ public class EntryService implements CommandLineRunner, ExitCodeGenerator{
     @Override
     public void run(String... args) throws Exception {
         log.info("Console Start---");
-        
+        String res = logAnalytics.authorize();
+        log.info("The result: " + res);
     }
     
 }
