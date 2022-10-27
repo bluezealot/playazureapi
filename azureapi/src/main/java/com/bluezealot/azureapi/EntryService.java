@@ -23,7 +23,7 @@ public class EntryService implements CommandLineRunner, ExitCodeGenerator{
     @Override
     public void run(String... args) throws Exception {
         log.info("Console Start---");
-        String res = logAnalytics.authorize();
+        String res = logAnalytics.authenticate();
         log.info("The result: " + res);
     }
     

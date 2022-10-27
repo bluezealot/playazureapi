@@ -1,1 +1,2 @@
 azureapi/bin/**/*.*
+.vscode/settings.json
