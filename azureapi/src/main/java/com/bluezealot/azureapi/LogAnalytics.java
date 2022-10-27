@@ -62,9 +62,6 @@ public class LogAnalytics {
     }
 
     public String query(String token, String kql) throws URISyntaxException, IOException, InterruptedException {
-        // FormBodyPublisher bdBuilder = FormBodyPublisher.newBuilder()
-        // .query("", )
-        // .build();
         BodyPublisher bd = BodyPublishers.ofString("{" + 
         "\"query\": \"ContainerInventory | where TimeGenerated > ago(100d)\"" +
         "}");
