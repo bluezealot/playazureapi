@@ -77,7 +77,7 @@ public class LogAnalytics {
         if(response.statusCode() != 200){
             throw new AuthenticationException("Http error code: " + response.statusCode() + ". Detail message: " + response.body());
         }
-        return kql;
+        return response.body();
     }
     
 }

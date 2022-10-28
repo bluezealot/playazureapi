@@ -24,8 +24,8 @@ public class EntryService implements CommandLineRunner, ExitCodeGenerator{
     public void run(String... args) throws Exception {
         log.info("Console Start---");
         String res = logAnalytics.authenticate();
-        logAnalytics.query(res, "ContainerInventory | where TimeGenerated > ago(100d)");
-        log.info("The result: " + res);
+        String result = logAnalytics.query(res, "ContainerInventory | where TimeGenerated > ago(100d)");
+        log.info("The result: " + result);
     }
     
 }
